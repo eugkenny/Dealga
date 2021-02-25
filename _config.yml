@@ -1,0 +1,25 @@
+title: "Dealga"
+description: "Irish Journal of Humanities and Social Science"
+
+url: "https://github.com/eugkenny/Dealga" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/Dealga" # the subpath of your site, e.g. /blog
+
+githublink: "https://github.com/eugkenny/Dealga"
+githubdir: "eugkenny"
+
+# Author/user information
+email: dealga.journal@gmail.com
+twitter_username: tweet_tweet
+github_username:  eugkenny
+authorurl: "https://eugkenny.github.io"
+address: |
+    Dealga Journal
+    Department of Humanities
+    Dundalk Institute of Technology
+
+# Build settings
+markdown: kramdown
+
+permalink: pretty
+
+include: ['assets']

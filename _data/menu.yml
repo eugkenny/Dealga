@@ -1,0 +1,18 @@
+- title: "Current Issue"
+  href: "/issue3/"
+
+- title: "Archive"
+  href: "/archive/"
+  subcategories:
+    - subtitle: "Volume 1, 2017"
+      subhref: "/issue1/"
+    - subtitle: "Volume 2, 2018"
+      subhref: "/issue2/"
+    - subtitle: "Volume 3, 2019"
+      subhref: "/issue3/"
+
+- title: "Announcements"
+  href: "/announcements/"
+
+- title: "About"
+  href: "/about/"

@@ -1,0 +1,267 @@
+/* Site footer */
+.site-footer {
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+//  margin-left: 12.5%;
+//  margin-right: -12.5%;
+  width:75%; /* Change this to whatever width you want. */
+  
+//  padding: 		0 12.5%;
+  border-top: 		1px solid $black;
+}
+
+.footer-heading {
+  font-size: 		18px;
+  margin-bottom: 	$spacing-unit / 2;
+}
+
+.contact-list,
+.social-media-list {
+  list-style: 		none;
+  margin-left: 		30;
+}
+
+.footer-col-wrapper {
+  font-size: 		15px;
+  color: 		$black;
+//  margin-left: 		$spacing-unit * 2;
+//  @extend %clearfix;
+}
+
+.footer-col {
+  float: left;
+  text-align: center;
+  margin-bottom: 	$spacing-unit / 2;
+//  padding-left: 	$spacing-unit / 2;
+}
+
+.footer-col-1 {
+  float:		left;
+  text-align:		left;
+  //width: 		-webkit-calc(25% - (#{$spacing-unit} / 2));
+  width:        	40%//calc(33.33% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {	
+  float:		center;
+  text-align:		left;
+  //width: 		-webkit-calc(50% - (#{$spacing-unit} / 2));
+//  width:         	33%//calc(33.33% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+  float: 		right;
+  text-align:		left;
+  //width: 		-webkit-calc(25% - (#{$spacing-unit} / 2));
+  width:         	16%//calc(33.33% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-laptop) {
+  .footer-col-1,
+  .footer-col-2 {
+    width: 		-webkit-calc(25% - (#{$spacing-unit} / 2));
+    width:         	33.33%//calc(25% - (#{$spacing-unit} / 2));
+  }
+
+  .footer-col-3 {
+    float: 		right;
+    width: 		-webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         	33.33%//calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+@include media-query($on-palm) {
+  .footer-col {
+    float: 		none;
+    width: 		-webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         	calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+/* Page content */
+.page-content {
+  padding: 		$spacing-unit 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.page-heading {
+  font-size: 		20px;
+}
+
+.post-list {
+  margin-left: 		0;
+  list-style: 		none;
+
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.post-meta {
+  font-size: 		$small-font-size;
+  color: 		$black;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+}
+
+/* Posts */
+.post-header {
+  margin-bottom: 	$spacing-unit;
+}
+
+h1 {
+  letter-spacing: 	-1px;
+  line-height: 		1;
+  font-family: 		'Titillium Web', sans-serif;
+  color: 		$black;
+
+    @include media-query($on-laptop) {
+/*        font-size: 36px; */
+    }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+  h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+/*        font-size: 32px; */
+
+        @include media-query($on-laptop) {
+/*            font-size: 28px; */
+    }
+  }
+
+  h3 {
+    font-style: italic;
+/*        font-size: 26px; */
+
+        @include media-query($on-laptop) {
+/*            font-size: 22px; */
+    }
+  }
+
+  h4 {
+/*       font-size: 20px; */
+
+        @include media-query($on-laptop) {
+/*            font-size: 18px; */
+     }
+  }
+}
+
+.footnotes ol li {list-style-type:decimal;}
+.footnotes ol {font-size:.85em; color:#666666;}	
+	
+html {
+  overflow-y: scroll;
+}
+
+ul.listing {
+  list-style-type: none;
+  margin-left: 0px;
+}
+
+ul.listing li.listing-seperator {
+  padding-top: 15px;
+  font-weight: bold;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.17em;
+}
+
+ul.listing li.listing-item time {
+  color: $black;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-right: 10px;
+}
+
+ul.listing li.listing-item a {
+  color: $black;
+  font-weight: 400;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+
+/*------ archive type stuff ------ */
+ul#archive {
+  width: 		75%;
+  list-style-type: 	none;
+//  margin: 0 125 1em 125;
+  margin: 		auto;
+       padding: 0;
+}
+
+ul#archive li {
+       border-top: #999 1px solid;
+       border-bottom: #999 1px solid;
+       padding: .1em 0 .1em .5em;
+}
+
+ul#archive li:nth-child(even) { background: #f3f3f3; }
+ul#archive li:nth-child(odd) { background: #fdfdfd; }
+
+
+ul#archive  h2 {
+	padding-top: .5em }
+
+ul#archive li.alt {
+       background: #f6f6f6;
+}
+
+.archiveposturl {
+//  margin-left: 50px;
+   display: block;
+   color: $black;
+}
+
+.archiveposturl:hover {
+}
+
+ul#archive li span a {
+  color: $black;
+  font-weight: bold;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+
+ul#archive li span.postlower {
+// color: $lit-black;
+  font-size: 85%
+}
+
+ul#archive li span.postlower a {
+//  color: #07c;
+  font-weight: normal;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+article ul {
+  list-style-type: none;
+}
+
+article ul > li:before {
+  content: "–"; /* en dash */
+  position: absolute;
+  margin-left: -1.1em; 
+}
+
+article ul#archive > li:before {
+  list-style-type: none;
+  content: none;
+}
+
+
+/* ul#archive li span {
+       color: #000;
+       font-size: 85%;
+}
+
+ul#archive li span a:hover {
+       border-bottom: #bdbdbd 1px solid;
+} */
